@@ -228,6 +228,7 @@ PercentPopoulationVaccinated where percentpopoulationvaccinated.Location like "A
 
 
 #CREATING VIEW TO STORE DATA FOR LATER VISUALIZATION.
+#CREANDO UNA VIEW PARA ALMACENAR LOS DATOS PARA VERLOS LUEGO.
 
 create view PercentPopoulationVaccinatedView as
 select death.continent, death.location, death.date, death.population, vacc.new_vaccinations,
