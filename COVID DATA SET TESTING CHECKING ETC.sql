@@ -4,9 +4,6 @@ SELECT * FROM portfolioproject.coviddeathscsv
 where continent is not null
 order by 3,4;
 
-#UPDATE portfolioproject.coviddeathscsv
-#SET continent = NULLIF(continent, '');
-
 
 #Select the data that we are going to be using.
 # Seleccionado los datos que vamos a usar.
