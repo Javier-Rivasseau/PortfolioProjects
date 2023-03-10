@@ -1,9 +1,9 @@
 #Cargando los datos desde mi PC hacia la base de datos en MySQL
 # Loading data in MySQL
 
-load data local infile 'C:\\Users\\Javi\\Desktop\\DATA ANALYSIS PROJECT COVID\\Nashville Project\\Nashville data.csv'
+load data local infile 'C:\\Users\\Javi\\Desktop\\DATA ANALYSIS PROJECT COVID\\Covid Project\\CovidVaccinationCSV.csv'
 
-into table nashville_data
+into table portfolioproject.covidvaccinationcsv
 
 fields terminated by ';'
 
@@ -12,6 +12,20 @@ enclosed by '"'
 lines terminated by '\n'
 
 ignore 1 rows;
+
+
+load data local infile 'C:\\Users\\Javi\\Desktop\\DATA ANALYSIS PROJECT COVID\\Covid Project\\CovidDeathsCSV.csv'
+
+into table portfolioproject.coviddeathscsv
+
+fields terminated by ';'
+
+enclosed by '"'
+
+lines terminated by '\n'
+
+ignore 1 rows;
+
 
 
 -- show global variables like 'local_infile';
